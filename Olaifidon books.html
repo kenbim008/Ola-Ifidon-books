@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ola Ifidon | Author, Speaker & Podcaster</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for Icons (modern header feel) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Smooth transitions and modern interactive effects */
+    body {
+      background: #faf9f6;
+    }
+    .card-soft {
+      transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    }
+    .card-soft:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.08);
+    }
+    .btn-soft {
+      transition: transform 0.2s ease, background 0.2s;
+    }
+    .btn-soft:hover {
+      transform: scale(1.02);
+    }
+    .hero-gradient-light {
+      background: linear-gradient(135deg, #fff9f0 0%, #fff3e4 50%, #fffaf5 100%);
+    }
+    .section-card-light {
+      background-color: #ffffff;
+      border: 1px solid #f0ede8;
+    }
+    .border-soft {
+      border-color: #eae6df;
+    }
+    .book-cover-shadow {
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+    }
+    /* header sticky & blur effect */
+    .sticky-nav {
+      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.85);
+      transition: all 0.2s ease;
+    }
+    .nav-link {
+      transition: color 0.2s ease;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: #d97706;
+    }
+  </style>
+</head>
+<body class="antialiased font-sans" style="background: #fcf9f5;">
+
+  <!-- ========== HEADER / NAVIGATION (ADDED) ========== -->
+  <header class="sticky top-0 z-50 w-full sticky-nav border-b border-gray-200/60">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+      <!-- Logo / Brand -->
+      <div class="flex items-center gap-2">
+        <i class="fas fa-feather-alt text-amber-600 text-xl"></i>
+        <span class="text-2xl font-bold tracking-tight bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">Ola Ifidon</span>
+      </div>
+      
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-gray-700">
+        <a href="#home" class="nav-link text-gray-800 hover:text-amber-600 transition">Home</a>
+        <a href="#books" class="nav-link hover:text-amber-600 transition">Books</a>
+        <a href="#about" class="nav-link hover:text-amber-600 transition">About</a>
+        <a href="#speaking" class="nav-link hover:text-amber-600 transition">Speaking</a>
+        <a href="#podcast" class="nav-link hover:text-amber-600 transition">Podcast</a>
+        <a href="#contact" class="nav-link hover:text-amber-600 transition">Contact</a>
+      </nav>
+      
+      <!-- CTA Button & Mobile Menu Icon (simple responsive) -->
+      <div class="flex items-center gap-4">
+        <button class="hidden md:flex bg-amber-500 hover:bg-amber-600 text-gray-900 px-5 py-2 rounded-full text-sm font-semibold transition shadow-sm items-center gap-2">
+          <i class="fas fa-book-open"></i> Shop Now
+        </button>
+        <!-- Mobile menu button (simple toggle for small screens, but we'll keep it functional with a small js) -->
+        <button id="mobileMenuBtn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-100 px-6 py-4 flex flex-col gap-3">
+      <a href="#home" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Home</a>
+      <a href="#books" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Books</a>
+      <a href="#about" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">About</a>
+      <a href="#speaking" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Speaking</a>
+      <a href="#podcast" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Podcast</a>
+      <a href="#contact" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Contact</a>
+      <button class="bg-amber-500 text-gray-900 w-full py-2 rounded-full font-semibold mt-2 flex items-center justify-center gap-2">
+        <i class="fas fa-book-open"></i> Shop Now
+      </button>
+    </div>
+  </header>
+
+  <div class="min-h-screen" style="background: #fcf9f5;">
+    
+    <!-- Hero Section (id="home") -->
+    <section id="home" class="relative overflow-hidden py-20 px-6 md:py-28 hero-gradient-light">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="uppercase tracking-[0.3em] text-amber-600 mb-4 text-sm font-semibold">Author • Speaker • Podcaster</p>
+          <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 text-gray-900">Ola Ifidon</h1>
+          <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+            Inspiring transformation through powerful storytelling, strategic business insights, and impactful speaking engagements.
+          </p>
+
+          <div class="flex flex-wrap gap-5">
+            <button class="bg-amber-500 text-gray-900 px-7 py-3 rounded-full font-semibold shadow-sm hover:shadow-md btn-soft hover:bg-amber-600 transition">
+              Buy Books
+            </button>
+            <button class="border border-gray-700 text-gray-800 px-7 py-3 rounded-full font-semibold hover:bg-gray-800 hover:text-white transition-all">
+              Book Speaking Engagement
+            </button>
+          </div>
+        </div>
+
+        <div class="relative flex justify-center">
+          <div class="absolute inset-0 bg-amber-300 blur-3xl opacity-20 rounded-full"></div>
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+            alt="Ola Ifidon portrait"
+            class="relative rounded-3xl shadow-xl w-full max-w-md object-cover border border-white/80 book-cover-shadow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (id="about") -->
+    <section id="about" class="py-20 px-6" style="background-color: #ffffff;">
+      <div class="max-w-5xl mx-auto text-center">
+        <div class="inline-block px-4 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-medium mb-4">Meet Ola</div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">About Ola Ifidon</h2>
+        <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+          Ola Ifidon is an accomplished author, business strategist, speaker, and podcast host passionate about empowering individuals and organizations through transformational insights. Through books, podcasts, and speaking engagements, Ola inspires audiences to think bigger, lead smarter, and live purposefully.
+        </p>
+      </div>
+    </section>
+
+    <!-- Books Section (id="books") -->
+    <section id="books" class="py-24 px-6" style="background-color: #fefaf5;">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between mb-12 flex-wrap gap-4">
+          <div>
+            <h2 class="text-4xl font-bold text-gray-800">Featured Books</h2>
+            <p class="text-gray-500 mt-2 text-base">Explore bestselling books by Ola Ifidon</p>
+          </div>
+          <button class="bg-amber-500 text-gray-900 px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-amber-600 transition-all">
+            View All Books
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-7">
+          <!-- Book 1: Rescured -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop" alt="Rescured" class="h-72 w-full object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Rescured</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">A transformational journey of resilience, healing, and rediscovery.</p>
+              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+            </div>
+          </div>
+          <!-- Book 2: Sell Me -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop" alt="Sell Me" class="h-72 w-full object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Sell Me</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">A practical and persuasive guide to mastering sales and influence.</p>
+              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+            </div>
+          </div>
+          <!-- Book 3: The Business of Business Analysis -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop" alt="The Business of Business Analysis" class="h-72 w-full object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">The Business of Business Analysis</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Insights and strategies for modern business analysis professionals.</p>
+              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+            </div>
+          </div>
+          <!-- Book 4: Recalibrate -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1200&auto=format&fit=crop" alt="Recalibrate" class="h-72 w-full object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Recalibrate</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">A guide to resetting your mindset, goals, and life trajectory.</p>
+              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+            </div>
+          </div>
+          <!-- Book 5: On the Other Side of the Night -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
+            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1200&auto=format&fit=crop" alt="On the Other Side of the Night" class="h-72 w-full object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">On the Other Side of the Night</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">A compelling story of hope, endurance, and triumph beyond adversity.</p>
+              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speaking Section (id="speaking") -->
+    <section id="speaking" class="py-24 px-6" style="background: linear-gradient(110deg, #fff9f0 0%, #fff5e6 100%);">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+            alt="Ola Ifidon speaking on stage"
+            class="rounded-3xl shadow-xl w-full object-cover border border-white/50"
+          />
+        </div>
+
+        <div>
+          <p class="uppercase tracking-widest text-amber-600 mb-4 font-semibold">Speaking Engagements</p>
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Book Ola For Your Next Event</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-8">
+            Available for conferences, leadership events, corporate trainings, podcasts, webinars, and keynote speaking engagements.
+          </p>
+
+          <ul class="space-y-3 text-gray-700 mb-8">
+            <li class="flex items-center gap-2">✔ Leadership & Transformation</li>
+            <li class="flex items-center gap-2">✔ Business Strategy & Analysis</li>
+            <li class="flex items-center gap-2">✔ Motivation & Personal Growth</li>
+            <li class="flex items-center gap-2">✔ Entrepreneurship & Innovation</li>
+          </ul>
+
+          <button class="bg-amber-500 text-gray-900 px-7 py-3 rounded-full font-semibold shadow-sm hover:bg-amber-600 transition-all">
+            Request Booking
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podcast Section (id="podcast") -->
+    <section id="podcast" class="py-24 px-6" style="background-color: #ffffff;">
+      <div class="max-w-5xl mx-auto text-center">
+        <span class="inline-block px-4 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-medium mb-4">Podcast</span>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">The Ola Ifidon Podcast</h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
+          Deep conversations about business, transformation, mindset, leadership, and success.
+        </p>
+
+        <div class="bg-white border border-amber-100 rounded-3xl p-10 shadow-md" style="background: #fefcf8;">
+          <div class="text-6xl mb-6">🎙️</div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">Latest Episode</h3>
+          <p class="text-gray-600 mb-6 text-lg">How to Recalibrate Your Mindset for Success and Long-Term Growth.</p>
+          <button class="bg-amber-500 text-gray-900 px-7 py-3 rounded-full font-semibold inline-flex items-center gap-2 hover:bg-amber-600 transition">
+            Listen Now
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (id="contact") -->
+    <section id="contact" class="py-24 px-6" style="background-color: #faf7f2;">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Let’s Connect</h2>
+        <p class="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+          Interested in speaking engagements, podcast interviews, collaborations, or book inquiries?
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-7">
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transition-all hover:shadow-md">
+            <div class="text-3xl mb-3">📧</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Email</h3>
+            <p class="text-amber-700 font-medium">contact@olaifidon.com</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transition-all hover:shadow-md">
+            <div class="text-3xl mb-3">🎧</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Podcast</h3>
+            <p class="text-gray-500">Available on Spotify & Apple Podcasts</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transition-all hover:shadow-md">
+            <div class="text-3xl mb-3">🎤</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Bookings</h3>
+            <p class="text-gray-500">Speaking & Corporate Events</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-8 text-center text-gray-500 bg-white">
+      <p>© 2026 Ola Ifidon. All Rights Reserved.</p>
+      <div class="flex justify-center gap-6 mt-3 text-sm text-gray-400">
+        <span>Privacy Policy</span>
+        <span>Contact</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Mobile menu toggle script -->
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      // Close mobile menu when a link is clicked
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Gentle alert interactions for demo buttons (non-intrusive preview)
+    const allActionButtons = document.querySelectorAll('button');
+    allActionButtons.forEach(btn => {
+      // skip the mobile menu button's own behaviour
+      if(btn.id === 'mobileMenuBtn') return;
+      btn.addEventListener('click', (e) => {
+        if(btn.innerText.includes('Buy Now') || btn.innerText.includes('View All Books') || btn.innerText.includes('Buy Books') || btn.innerText.includes('Shop Now')) {
+          e.preventDefault();
+          alert('📚 Thank you for your interest! This is a preview. In the live site, you will be redirected to the bookstore.');
+        } else if (btn.innerText.includes('Request Booking') || btn.innerText.includes('Book Speaking Engagement')) {
+          e.preventDefault();
+          alert('🎤 Speaking inquiry received! Please email contact@olaifidon.com for availability.');
+        } else if (btn.innerText.includes('Listen Now')) {
+          e.preventDefault();
+          alert('🎙️ You would be redirected to the latest episode on your favorite platform.');
+        }
+      });
+    });
+    
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+          // update URL hash without jumping
+          history.pushState(null, null, `#${targetId}`);
+        }`
+      });
+    });
+  </script>
+</body>
+</html>
