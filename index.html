@@ -52,6 +52,12 @@
     .nav-link:hover {
       color: #d97706;
     }
+    .video-embed {
+      aspect-ratio: 16 / 9;
+    }
+    .book-detail-img {
+      object-fit: cover;
+    }
   </style>
 </head>
 <body class="antialiased font-sans" style="background: #fcf9f5;">
@@ -77,9 +83,9 @@
       
       <!-- CTA Button & Mobile Menu Icon (simple responsive) -->
       <div class="flex items-center gap-4">
-        <button class="hidden md:flex bg-amber-500 hover:bg-amber-600 text-gray-900 px-5 py-2 rounded-full text-sm font-semibold transition shadow-sm items-center gap-2">
+        <a href="#books" class="hidden md:flex bg-amber-500 hover:bg-amber-600 text-gray-900 px-5 py-2 rounded-full text-sm font-semibold transition shadow-sm items-center gap-2">
           <i class="fas fa-book-open"></i> Shop Now
-        </button>
+        </a>
         <!-- Mobile menu button (simple toggle for small screens, but we'll keep it functional with a small js) -->
         <button id="mobileMenuBtn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
           <i class="fas fa-bars"></i>
@@ -95,9 +101,9 @@
       <a href="#speaking" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Speaking</a>
       <a href="#podcast" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Podcast</a>
       <a href="#contact" class="nav-link py-2 text-gray-800 hover:text-amber-600 transition">Contact</a>
-      <button class="bg-amber-500 text-gray-900 w-full py-2 rounded-full font-semibold mt-2 flex items-center justify-center gap-2">
+      <a href="#books" class="bg-amber-500 text-gray-900 w-full py-2 rounded-full font-semibold mt-2 flex items-center justify-center gap-2">
         <i class="fas fa-book-open"></i> Shop Now
-      </button>
+      </a>
     </div>
   </header>
 
@@ -107,10 +113,10 @@
     <section id="home" class="relative overflow-hidden py-20 px-6 md:py-28 hero-gradient-light">
       <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="uppercase tracking-[0.3em] text-amber-600 mb-4 text-sm font-semibold">Author • Speaker • Podcaster</p>
+          <p class="uppercase tracking-[0.3em] text-amber-600 mb-4 text-sm font-semibold">Author ? Speaker ? Podcaster</p>
           <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 text-gray-900">Ola Ifidon</h1>
           <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-            Purpose-driven leader, author, and speaker—empowering others to transform setbacks into stepping stones and redefine success on their own terms.
+            Purpose-driven leader, author, and speaker?empowering others to transform setbacks into stepping stones and redefine success on their own terms.
           </p>
 
           <div class="flex flex-wrap gap-5">
@@ -126,8 +132,8 @@
         <div class="relative flex justify-center">
           <div class="absolute inset-0 bg-amber-300 blur-3xl opacity-20 rounded-full"></div>
           <img
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
-            alt="Ola Ifidon portrait"
+            src="https://static.wixstatic.com/media/f80df3_6f81198f6b044d769c88fdbb4f1031a7~mv2.jpg/v1/crop/x_367,y_0,w_4096,h_3219/fill/w_1144,h_899,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9E1A3922.jpg"
+            alt="Abimbola (Ola) Ifidon"
             class="relative rounded-3xl shadow-xl w-full max-w-md object-cover border border-white/80 book-cover-shadow"
           />
         </div>
@@ -139,85 +145,188 @@
       <div class="max-w-5xl mx-auto text-center">
         <div class="inline-block px-4 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-medium mb-4">About Me</div>
         <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Abimbola (Ola) Ifidon</h2>
-        <p class="text-gray-500 max-w-2xl mx-auto mb-10">Author • Speaker • Business &amp; Career Strategist • Executive Managing Director, ValCon Inc.</p>
+        <p class="text-gray-500 max-w-2xl mx-auto mb-10">Author ? Speaker ? Business &amp; Career Strategist ? Executive Managing Director, ValCon Inc.</p>
         <div class="space-y-6 text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto text-left">
           <p>Abimbola (Ola) Ifidon is the first daughter of six children born to the late Johnson Arowosegbe and Veronica Arowosegbe, both of whom were astute scholars with a deep commitment to education and intellectual excellence.</p>
           <p>She is an accomplished professional with extensive expertise and a distinguished academic background. She holds dual Master of Business Administration (MBA) degrees from Cornell University, USA, and Queen's University, Canada, and has earned a merit award in Economics. She was also the first Certified Business Analysis Professional (CBAP) in Alberta, Canada. Demonstrating resilience and determination, Ola earned her Chartered Director (C.Dir) designation from McMaster University in Ontario while navigating a particularly challenging period in her life, further solidifying her reputation as a purpose-driven transformational leader.</p>
-          <p>Having faced her share of life's challenges—from overcoming a major health crisis, as chronicled in her book <em>Rescued</em>, to navigating job loss and toxic environments—Ola has continuously redefined herself. Drawing on inner strength and a resilient spirit, she has used adversity as a catalyst for growth, transforming setbacks into stepping stones for success.</p>
+          <p>Having faced her share of life's challenges?from overcoming a major health crisis, as chronicled in her book <em>Rescued</em>, to navigating job loss and toxic environments?Ola has continuously redefined herself. Drawing on inner strength and a resilient spirit, she has used adversity as a catalyst for growth, transforming setbacks into stepping stones for success.</p>
           <p>Passionate about empowering others, Ola is the Executive Managing Director, Strategy &amp; Business Solutions at ValCon Inc., an Alberta-based management firm. A business and career strategist, sought-after speaker, and author of several books, including <em>Rescued</em> and <em>SELL Me: Strategies for Crafting an Impactful Resume</em>.</p>
-          <p>In <em>Recalibrate</em>, she shares practical strategies for not just bouncing back from life's setbacks but springing forward—reframing limitations as opportunities for growth and redefining success on one's own terms.</p>
+          <p>In <em>Recalibrate</em>, she shares practical strategies for not just bouncing back from life's setbacks but springing forward?reframing limitations as opportunities for growth and redefining success on one's own terms.</p>
           <p>Ola is happily married to her college sweetheart, Kenneth Ifidon, and together they are raising three remarkable sons.</p>
         </div>
         <h3 class="text-2xl font-bold text-gray-800 mt-14 mb-8">Why I Write</h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto text-left">
-          <div class="bg-amber-50/80 border border-amber-100 rounded-2xl p-5"><h4 class="font-bold text-amber-800 mb-2">Passion</h4><p class="text-gray-600 text-sm leading-relaxed">Writing is an outpouring of passion—authentic storytelling that inspires, informs, and connects.</p></div>
+          <div class="bg-amber-50/80 border border-amber-100 rounded-2xl p-5"><h4 class="font-bold text-amber-800 mb-2">Passion</h4><p class="text-gray-600 text-sm leading-relaxed">Writing is an outpouring of passion?authentic storytelling that inspires, informs, and connects.</p></div>
           <div class="bg-amber-50/80 border border-amber-100 rounded-2xl p-5"><h4 class="font-bold text-amber-800 mb-2">Responsibility</h4><p class="text-gray-600 text-sm leading-relaxed">A duty to share experiences that have shaped and transformed her life.</p></div>
           <div class="bg-amber-50/80 border border-amber-100 rounded-2xl p-5"><h4 class="font-bold text-amber-800 mb-2">Purpose</h4><p class="text-gray-600 text-sm leading-relaxed">Using God-given talents and life experiences to empower others.</p></div>
-          <div class="bg-amber-50/80 border border-amber-100 rounded-2xl p-5"><h4 class="font-bold text-amber-800 mb-2">Legacy</h4><p class="text-gray-600 text-sm leading-relaxed">Leaving something meaningful—for readers today and generations to come.</p></div>
+          <div class="bg-amber-50/80 border border-amber-100 rounded-2xl p-5"><h4 class="font-bold text-amber-800 mb-2">Legacy</h4><p class="text-gray-600 text-sm leading-relaxed">Leaving something meaningful?for readers today and generations to come.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Books Section (id="books") -->
+
+    <!-- Books Section (id="books") ? content from abimbolaifidon.com -->
     <section id="books" class="py-24 px-6" style="background-color: #fefaf5;">
       <div class="max-w-7xl mx-auto">
         <div class="flex items-center justify-between mb-12 flex-wrap gap-4">
           <div>
-            <h2 class="text-4xl font-bold text-gray-800">Featured Books</h2>
-            <p class="text-gray-500 mt-2 text-base">Explore bestselling books by Ola Ifidon</p>
+            <h2 class="text-4xl font-bold text-gray-800">Books</h2>
+            <p class="text-gray-500 mt-2 text-base">Official titles from <a href="https://www.abimbolaifidon.com/" class="text-amber-700 hover:underline" target="_blank" rel="noopener">abimbolaifidon.com</a> &amp; <a href="https://www.therescuestory.ca/home" class="text-amber-700 hover:underline" target="_blank" rel="noopener">The Rescue Story</a></p>
           </div>
-          <button class="bg-amber-500 text-gray-900 px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-amber-600 transition-all">
-            View All Books
-          </button>
+          <a href="#book-rescued" class="bg-amber-500 text-gray-900 px-5 py-2.5 rounded-full font-semibold shadow-sm hover:bg-amber-600 transition-all">Explore Books</a>
         </div>
 
-        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-7">
-          <!-- Book 1: Rescued -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
-            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop" alt="Rescued" class="h-72 w-full object-cover">
+        <!-- Book covers grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mb-20">
+          <a href="#book-rescued" class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft block">
+            <img src="https://static.wixstatic.com/media/c872fd_120c8ed58bad415ab109d7e0c8196f38~mv2.jpg/v1/fill/w_572,h_730,al_c,lg_1,q_85,enc_avif,quality_auto/Rescued%202.jpg" alt="Rescued book cover" class="h-80 w-full object-cover bg-gray-100">
             <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Rescued</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">A transformational journey of resilience, healing, and rediscovery after a major health crisis.</p>
-              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">Rescued</h3>
+              <p class="text-gray-500 text-sm">A memoir of faith, fate &amp; resilience</p>
             </div>
-          </div>
-          <!-- Book 2: Sell Me -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
-            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop" alt="Sell Me" class="h-72 w-full object-cover">
+          </a>
+          <a href="#book-sell-me" class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft block">
+            <img src="https://static.wixstatic.com/media/f80df3_8868a7c1e0a54a1bab7bcffbf2fcd124~mv2.png/v1/crop/x_0,y_77,w_864,h_1012/fill/w_572,h_730,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Strategies%20for%20crafting%20impactful%20resume_Book%20cover.png" alt="SELL Me book cover" class="h-80 w-full object-contain bg-gray-50 p-2">
             <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">SELL Me</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Strategies for crafting an impactful resume and presenting your professional value.</p>
-              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">SELL Me</h3>
+              <p class="text-gray-500 text-sm">Strategies for Crafting an Impactful Resume</p>
             </div>
-          </div>
-          <!-- Book 3: The Business of Business Analysis -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop" alt="The Business of Business Analysis" class="h-72 w-full object-cover">
+          </a>
+          <a href="#book-recalibrate" class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft block">
+            <img src="https://static.wixstatic.com/media/f80df3_ca41f5292a764cf082b5e6c8843b24f6~mv2.png/v1/crop/x_25,y_86,w_794,h_1014/fill/w_572,h_730,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Recalibrate_%20Front%20Cover.png" alt="Recalibrate book cover" class="h-80 w-full object-contain bg-gray-50 p-2">
             <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">The Business of Business Analysis</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Insights and strategies for modern business analysis professionals.</p>
-              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">Recalibrate</h3>
+              <p class="text-gray-500 text-sm">Reset, rebuild &amp; thrive with purpose</p>
             </div>
-          </div>
-          <!-- Book 4: Recalibrate -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
-            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1200&auto=format&fit=crop" alt="Recalibrate" class="h-72 w-full object-cover">
+          </a>
+          <a href="#book-other-side" class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft block">
+            <img src="https://static.wixstatic.com/media/f80df3_a382e2210173405aa5c6dade096ff8ab~mv2.jpg/v1/crop/x_0,y_56,w_728,h_928/fill/w_572,h_730,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/On%20the%20Other%20side%20of%20the%20Night_%20Front%20cover.jpg" alt="On the Other Side of the Night cover" class="h-80 w-full object-cover bg-gray-100">
             <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Recalibrate</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">A guide to resetting your mindset, goals, and life trajectory.</p>
-              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
+              <h3 class="text-xl font-bold text-gray-800 mb-1">On the Other Side of the Night</h3>
+              <p class="text-gray-500 text-sm">Fear, faith &amp; quiet courage</p>
             </div>
-          </div>
-          <!-- Book 5: On the Other Side of the Night -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-soft">
-            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1200&auto=format&fit=crop" alt="On the Other Side of the Night" class="h-72 w-full object-cover">
-            <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">On the Other Side of the Night</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">A compelling story of hope, endurance, and triumph beyond adversity.</p>
-              <button class="w-full bg-amber-100 text-amber-800 py-2 rounded-full font-semibold hover:bg-amber-200 transition">Buy Now</button>
-            </div>
-          </div>
+          </a>
         </div>
+
+        <!-- ========== RESCUED ========== -->
+        <article id="book-rescued" class="scroll-mt-28 mb-24 bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+          <div class="grid lg:grid-cols-2 gap-0">
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+              <p class="text-amber-600 font-semibold text-sm uppercase tracking-widest mb-2">The Rescue Story</p>
+              <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Rescued</h3>
+              <p class="text-gray-500 italic mb-6">A memoir of faith and fate</p>
+              <div class="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
+                <p>Life happens to us all. One day we are on the mountain of hope and optimism; the next we are in the valley of hopelessness and despair. When you receive that devastating message from your spouse, your banker, or your doctor, do not give up?all hope is not lost.</p>
+                <p><strong>&ldquo;Rescued&rdquo;</strong> is a story of courage and resilience in the face of difficult challenges. It offers hope and strategies on how to navigate the turbulent times of life.</p>
+                <p>Rescued is an odyssey that goes beyond information sharing. It is packed with insights, revelations and strategies that will inspire you to hope again.</p>
+                <p>I did not start off thinking I would be writing a book. I was only journaling my experience as part of a therapeutic mental exercise. No sooner had I started than I began to realize how my experience would benefit people going through similar or more challenging situations. We all get used to having a full cup, but at some point life will hand you a half-filled cup?you may choose to see it as half-full or half-empty; your perspective will largely determine your attitude, actions, and the strength you generate from within.</p>
+                <p>As a recipient of grace, I wanted to give back?to share my struggles, vulnerabilities, and successes, as well as the strategies that helped me navigate the turbulence, and to proclaim the faithfulness of God.</p>
+              </div>
+              <div class="flex flex-wrap gap-3 mt-8">
+                <a href="https://www.amazon.ca/Rescued-memoir-faith-Abimbola-Ifidon/dp/177782950X" target="_blank" rel="noopener" class="bg-amber-500 text-gray-900 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-amber-600 transition">Amazon Canada</a>
+                <a href="https://www.indigo.ca/en-ca/rescued-a-memoir-of-faith-and-fate/9781777829506.html" target="_blank" rel="noopener" class="border border-amber-300 text-amber-800 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-amber-50 transition">Indigo Chapters</a>
+                <a href="https://www.abimbolaifidon.com/copy-of-books" target="_blank" rel="noopener" class="text-gray-600 px-5 py-2.5 text-sm hover:text-amber-700">Official page ?</a>
+              </div>
+            </div>
+            <div class="bg-gray-50 p-6 lg:p-8 space-y-4">
+              <img src="https://static.wixstatic.com/media/c872fd_120c8ed58bad415ab109d7e0c8196f38~mv2.jpg/v1/fill/w_572,h_730,al_c,lg_1,q_85,enc_avif,quality_auto/Rescued%202.jpg" alt="Rescued cover" class="w-full max-w-xs mx-auto rounded-xl book-cover-shadow">
+              <img src="https://static.wixstatic.com/media/f80df3_fcf703c20b07433c927c42c80ebccede~mv2.jpg/v1/fill/w_1064,h_1381,al_c,q_85,enc_avif,quality_auto/Ola%20Rescued%20Book%20Stairs%20Photo.jpg" alt="Ola Ifidon with Rescued book" class="w-full rounded-xl book-cover-shadow book-detail-img max-h-72">
+              <img src="https://static.wixstatic.com/media/938ae2_73e2d62889a2453da4fa388661cb9357~mv2.png/v1/fill/w_664,h_386,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Giving%20back_Community.png" alt="Paying it forward ? community" class="w-full rounded-xl">
+            </div>
+          </div>
+          <div class="px-6 lg:px-12 pb-10">
+            <h4 class="text-lg font-bold text-gray-800 mb-4 text-center">Video</h4>
+            <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg video-embed w-full">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/X1gFNTEc85g" title="Rescued ? The Rescue Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========== SELL ME ========== -->
+        <article id="book-sell-me" class="scroll-mt-28 mb-24 bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+          <div class="grid lg:grid-cols-2 gap-0">
+            <div class="bg-gray-50 p-6 lg:p-8 order-2 lg:order-1 space-y-4">
+              <img src="https://static.wixstatic.com/media/f80df3_8868a7c1e0a54a1bab7bcffbf2fcd124~mv2.png/v1/crop/x_0,y_77,w_864,h_1012/fill/w_572,h_730,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Strategies%20for%20crafting%20impactful%20resume_Book%20cover.png" alt="SELL Me cover" class="w-full max-w-xs mx-auto rounded-xl book-cover-shadow">
+              <img src="https://static.wixstatic.com/media/c872fd_bab54483467a4977aa9caaa337e1b9f9~mv2.jpg/v1/fill/w_848,h_592,al_c,q_85,enc_avif,quality_auto/Book%20p1c_edited.jpg" alt="SELL Me book review" class="w-full rounded-xl book-cover-shadow">
+            </div>
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+              <p class="text-amber-600 font-semibold text-sm uppercase tracking-widest mb-2">Career &amp; Personal Branding</p>
+              <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">SELL Me</h3>
+              <p class="text-gray-700 font-medium mb-6">Strategies for Crafting an Impactful Resume</p>
+              <p class="text-gray-600 italic border-l-4 border-amber-300 pl-4 mb-6">Your resume isn&rsquo;t just a document?it&rsquo;s your first sales pitch. Make it count with strategies that turn experience into impact.</p>
+              <div class="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
+                <p>SELL ME isn&rsquo;t just a book?it&rsquo;s your personal branding toolkit in today&rsquo;s hyper-competitive job market. Whether you&rsquo;re a new graduate, a mid-career professional, or a seasoned leader aiming for the next big opportunity, this guide will empower you to transform your resume from a list of job titles into a compelling story of value and impact.</p>
+                <p>Packed with real-world insights, proven techniques, and practical templates, this guide teaches you how to think like a recruiter and write like a marketer?so your resume doesn&rsquo;t just get read, it gets results. If you&rsquo;re ready to stop getting overlooked and start standing out, this is the blueprint you&rsquo;ve been waiting for.</p>
+              </div>
+              <div class="flex flex-wrap gap-3 mt-8">
+                <a href="https://www.amazon.ca/Strategies-Practices-Crafting-Impactful-Resume/dp/1777829534" target="_blank" rel="noopener" class="bg-amber-500 text-gray-900 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-amber-600 transition">Amazon Canada</a>
+                <a href="https://www.abimbolaifidon.com/copy-of-rescued" target="_blank" rel="noopener" class="text-gray-600 px-5 py-2.5 text-sm hover:text-amber-700">Official page ?</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 lg:px-12 pb-10">
+            <h4 class="text-lg font-bold text-gray-800 mb-4 text-center">Video</h4>
+            <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg video-embed w-full">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/X1gFNTEc85g" title="The Rescue Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========== RECALIBRATE ========== -->
+        <article id="book-recalibrate" class="scroll-mt-28 mb-24 bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+          <div class="grid lg:grid-cols-2 gap-0">
+            <div class="p-8 lg:p-12">
+              <p class="text-amber-600 font-semibold text-sm uppercase tracking-widest mb-2">Transformation</p>
+              <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Recalibrate</h3>
+              <p class="text-gray-800 font-bold text-lg mb-6 uppercase tracking-wide">Reclaim your life. Rebuild your future. Reset with purpose.</p>
+              <div class="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
+                <p>Whether you&rsquo;re dealing with job loss, a broken relationship, a health crisis, or personal setbacks, adversity can leave you feeling lost and uncertain about what lies ahead.</p>
+                <p>Recalibrate isn&rsquo;t just another self-help book packed with clich?s?it&rsquo;s a practical blueprint for transformation. This book provides a roadmap to resilience, growth, and transformation. Whether you&rsquo;ve hit rock bottom or feel stuck in transition, this guide will empower you to regain control and build a life rooted in purpose, confidence, and fulfillment.</p>
+                <p>Through practical strategies, real-life stories, and actionable steps, Recalibrate helps you break free from limiting beliefs, rebuild your confidence, and create a life that aligns with your true purpose. You&rsquo;ll learn how to shift your mindset, develop unshakable habits, and turn setbacks into stepping stones for success.</p>
+                <p class="font-semibold text-gray-800">Your past does not define you?your comeback does. It&rsquo;s time to reset, rebuild, and thrive against all odds. Your journey starts now.</p>
+                <p>Ready to reset? Your comeback story begins now.</p>
+              </div>
+              <a href="https://www.abimbolaifidon.com/recalibrate" target="_blank" rel="noopener" class="inline-block mt-8 text-amber-700 font-semibold hover:underline">Read more on abimbolaifidon.com ?</a>
+            </div>
+            <div class="bg-gray-50 p-6 lg:p-8 space-y-4">
+              <img src="https://static.wixstatic.com/media/f80df3_ca41f5292a764cf082b5e6c8843b24f6~mv2.png/v1/crop/x_25,y_86,w_794,h_1014/fill/w_572,h_730,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Recalibrate_%20Front%20Cover.png" alt="Recalibrate cover" class="w-full max-w-xs mx-auto rounded-xl book-cover-shadow">
+              <img src="https://static.wixstatic.com/media/f80df3_345f176ff62d4545b8206c178fc49432~mv2.jpg/v1/fill/w_1976,h_1354,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Recalibrate%20Mockup.jpg" alt="Recalibrate book mockup" class="w-full rounded-xl book-cover-shadow">
+            </div>
+          </div>
+          <div class="px-6 lg:px-12 pb-10">
+            <h4 class="text-lg font-bold text-gray-800 mb-4 text-center">Video</h4>
+            <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg video-embed w-full">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/X1gFNTEc85g" title="The Rescue Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========== ON THE OTHER SIDE OF THE NIGHT ========== -->
+        <article id="book-other-side" class="scroll-mt-28 bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+          <div class="grid lg:grid-cols-2 gap-0">
+            <div class="bg-gray-50 p-6 lg:p-8 flex items-center justify-center">
+              <img src="https://static.wixstatic.com/media/f80df3_a382e2210173405aa5c6dade096ff8ab~mv2.jpg/v1/crop/x_0,y_56,w_728,h_928/fill/w_572,h_730,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/On%20the%20Other%20side%20of%20the%20Night_%20Front%20cover.jpg" alt="On the Other Side of the Night cover" class="w-full max-w-sm rounded-xl book-cover-shadow">
+            </div>
+            <div class="p-8 lg:p-12">
+              <p class="text-amber-600 font-semibold text-sm uppercase tracking-widest mb-2">Narrative Nonfiction</p>
+              <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">On the Other Side of the Night</h3>
+              <p class="text-gray-700 font-medium mb-6">When the Lights Go Out: Cross the Night</p>
+              <div class="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
+                <p>On the Other Side of the Night is a deeply reflective narrative nonfiction work that explores fear, faith, leadership, and the quiet courage required when life interrupts certainty. It is about decision-making under terror, trusting life again, and discovering peace when nothing feels safe.</p>
+                <p>It is about standing at the intersection of knowledge and emotion, where logic cannot quiet the heart, and courage must be summoned without guarantees. This story explores what it means to choose peace without knowing the outcome, to trust life when control slips away, and to move forward when every instinct wants to freeze. It is about the unseen battles?decision fatigue, anticipatory grief, identity disruption, and the quiet reckoning with one&rsquo;s own mortality.</p>
+                <p>This is a story of agency reclaimed, of fear faced?not conquered, but walked through. It is about surrender that is not defeat, and faith that shows up as steadiness rather than certainty. Ultimately, this book is an offering of hope?for anyone navigating diagnosis or divorce, loss or leadership, illness or irreversible change.</p>
+                <p class="font-semibold text-gray-800">This is not a story of survival alone. It is a story of becoming.</p>
+              </div>
+              <a href="https://www.abimbolaifidon.com/on-the-other-side-of-the-night" target="_blank" rel="noopener" class="inline-block mt-8 text-amber-700 font-semibold hover:underline">Official page ?</a>
+            </div>
+          </div>
+          <div class="px-6 lg:px-12 pb-10">
+            <h4 class="text-lg font-bold text-gray-800 mb-4 text-center">Video</h4>
+            <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg video-embed w-full">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/X1gFNTEc85g" title="The Rescue Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -240,10 +349,10 @@
           </p>
 
           <ul class="space-y-3 text-gray-700 mb-8">
-            <li class="flex items-center gap-2">✔ Leadership & Transformation</li>
-            <li class="flex items-center gap-2">✔ Business Strategy & Analysis</li>
-            <li class="flex items-center gap-2">✔ Motivation & Personal Growth</li>
-            <li class="flex items-center gap-2">✔ Entrepreneurship & Innovation</li>
+            <li class="flex items-center gap-2">? Leadership & Transformation</li>
+            <li class="flex items-center gap-2">? Business Strategy & Analysis</li>
+            <li class="flex items-center gap-2">? Motivation & Personal Growth</li>
+            <li class="flex items-center gap-2">? Entrepreneurship & Innovation</li>
           </ul>
 
           <button class="bg-amber-500 text-gray-900 px-7 py-3 rounded-full font-semibold shadow-sm hover:bg-amber-600 transition-all">
@@ -257,19 +366,31 @@
     <section id="podcast" class="py-24 px-6" style="background-color: #ffffff;">
       <div class="max-w-5xl mx-auto text-center">
         <span class="inline-block px-4 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-medium mb-4">Podcast</span>
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">The Ola Ifidon Podcast</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">RESET TALKS ? Thriving with Purpose</h2>
         <p class="text-gray-600 text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
-          Deep conversations about business, transformation, mindset, leadership, and success.
+          Your weekly space to reframe, empower, strategize, evolve, and thrive. (RESET)
         </p>
 
-        <div class="bg-white border border-amber-100 rounded-3xl p-10 shadow-md" style="background: #fefcf8;">
-          <div class="text-6xl mb-6">🎙️</div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-3">Latest Episode</h3>
-          <p class="text-gray-600 mb-6 text-lg">How to Recalibrate Your Mindset for Success and Long-Term Growth.</p>
-          <button class="bg-amber-500 text-gray-900 px-7 py-3 rounded-full font-semibold inline-flex items-center gap-2 hover:bg-amber-600 transition">
-            Listen Now
-            <span>→</span>
-          </button>
+        <div class="grid md:grid-cols-2 gap-10 items-center mb-12 text-left">
+          <a href="https://www.abimbolaifidon.com/reset-talks-podcast" target="_blank" rel="noopener" class="block rounded-2xl overflow-hidden shadow-md card-soft">
+            <img src="https://static.wixstatic.com/media/f80df3_3334b25d27324f8a83ddd6bff11f1ff4~mv2.jpg/v1/fill/w_734,h_621,al_c,q_85,enc_avif,quality_auto/Finger%20Reset%20Button%20.jpg" alt="RESET TALKS" class="w-full object-cover">
+          </a>
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-800">Episodes</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li><span class="text-amber-600 font-bold">1.</span> The Power of a Reset</li>
+              <li><span class="text-amber-600 font-bold">2.</span> The Resilience Blueprint</li>
+              <li><span class="text-amber-600 font-bold">3.</span> Purpose Blueprint: Map Your Life for Clarity &amp; Impact</li>
+              <li><span class="text-amber-600 font-bold">4.</span> Integration: Align Your Career, Relationships &amp; Habits with Purpose</li>
+            </ul>
+            <a href="https://www.abimbolaifidon.com/reset-talks-podcast" target="_blank" rel="noopener" class="inline-flex bg-amber-500 text-gray-900 px-7 py-3 rounded-full font-semibold items-center gap-2 hover:bg-amber-600 transition">
+              Subscribe &amp; Listen <span>?</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg video-embed w-full">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/X1gFNTEc85g" title="The Rescue Story" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -277,26 +398,26 @@
     <!-- Contact Section (id="contact") -->
     <section id="contact" class="py-24 px-6" style="background-color: #faf7f2;">
       <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Let’s Connect</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Let?s Connect</h2>
         <p class="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
           Interested in speaking engagements, podcast interviews, collaborations, or book inquiries?
         </p>
 
         <div class="grid md:grid-cols-3 gap-7">
           <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transition-all hover:shadow-md">
-            <div class="text-3xl mb-3">📧</div>
+            <div class="text-3xl mb-3">??</div>
             <h3 class="text-xl font-bold mb-2 text-gray-800">Email</h3>
             <p class="text-amber-700 font-medium"><a href="mailto:connectwitholaifidon@gmail.com" class="hover:underline">connectwitholaifidon@gmail.com</a></p>
           </div>
 
           <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transition-all hover:shadow-md">
-            <div class="text-3xl mb-3">🎧</div>
+            <div class="text-3xl mb-3">??</div>
             <h3 class="text-xl font-bold mb-2 text-gray-800">Podcast</h3>
-            <p class="text-gray-500">Available on Spotify & Apple Podcasts</p>
+            <p class="text-gray-500"><a href="https://www.abimbolaifidon.com/reset-talks-podcast" target="_blank" rel="noopener" class="text-amber-700 hover:underline">RESET TALKS on abimbolaifidon.com</a></p>
           </div>
 
           <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center transition-all hover:shadow-md">
-            <div class="text-3xl mb-3">🎤</div>
+            <div class="text-3xl mb-3">??</div>
             <h3 class="text-xl font-bold mb-2 text-gray-800">Bookings</h3>
             <p class="text-gray-500">Speaking & Corporate Events</p>
           </div>
@@ -306,7 +427,7 @@
 
     <!-- Footer -->
     <footer class="border-t border-gray-200 py-8 text-center text-gray-500 bg-white">
-      <p>© 2026 Ola Ifidon. All Rights Reserved.</p>
+      <p>? 2026 Ola Ifidon. All Rights Reserved.</p>
       <div class="flex justify-center gap-6 mt-3 text-sm text-gray-400">
         <span>Privacy Policy</span>
         <span>Contact</span>
@@ -336,16 +457,17 @@
     allActionButtons.forEach(btn => {
       // skip the mobile menu button's own behaviour
       if(btn.id === 'mobileMenuBtn') return;
+      if (btn.closest('a[href^="http"]') || btn.closest('a[href^="mailto"]')) return;
       btn.addEventListener('click', (e) => {
         if(btn.innerText.includes('Buy Now') || btn.innerText.includes('View All Books') || btn.innerText.includes('Buy Books') || btn.innerText.includes('Shop Now')) {
           e.preventDefault();
-          alert('📚 Thank you for your interest! This is a preview. In the live site, you will be redirected to the bookstore.');
+          alert('?? Thank you for your interest! This is a preview. In the live site, you will be redirected to the bookstore.');
         } else if (btn.innerText.includes('Request Booking') || btn.innerText.includes('Book Speaking Engagement')) {
           e.preventDefault();
-          alert('🎤 Speaking inquiry received! Please email connectwitholaifidon@gmail.com for availability.');
+          alert('?? Speaking inquiry received! Please email connectwitholaifidon@gmail.com for availability.');
         } else if (btn.innerText.includes('Listen Now')) {
           e.preventDefault();
-          alert('🎙️ You would be redirected to the latest episode on your favorite platform.');
+          alert('??? You would be redirected to the latest episode on your favorite platform.');
         }
       });
     });
